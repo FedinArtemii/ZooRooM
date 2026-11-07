@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 270">
+<defs><pattern id="p" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#8d2448" opacity=".21"/></pattern></defs>
+<path fill="#f2c3ce" d="M0 0h420v270H0z"/><path fill="url(#p)" d="M0 0h420v270H0z"/>
+<circle cx="210" cy="137" r="100" fill="#f8d8dc"/>
+<g transform="rotate(-29 210 135)" stroke="#7b3050" stroke-width="4">
+<rect x="194" y="133" width="31" height="100" rx="16" fill="#ce795a"/>
+<rect x="158" y="53" width="102" height="105" rx="35" fill="#d99077"/>
+<rect x="171" y="66" width="76" height="79" rx="25" fill="#ffe5d2"/>
+<g fill="#8d2448" stroke="none"><circle cx="188" cy="86" r="3"/><circle cx="210" cy="86" r="3"/><circle cx="231" cy="86" r="3"/><circle cx="188" cy="106" r="3"/><circle cx="210" cy="106" r="3"/><circle cx="231" cy="106" r="3"/><circle cx="188" cy="126" r="3"/><circle cx="210" cy="126" r="3"/><circle cx="231" cy="126" r="3"/></g>
+</g>
+<path d="M105 129q4-23 23-27-19-4-23-27-4 23-23 27 19 4 23 27Zm211 57q3-19 19-22-16-4-19-22-4 18-20 22 16 3 20 22Z" fill="#fff5e5"/>
+</svg>

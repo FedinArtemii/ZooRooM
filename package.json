@@ -1,0 +1,11 @@
+{
+  "name": "zooroom",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node tools/setup.mjs",
+    "start": "node tools/serve.mjs",
+    "export": "node tools/export.mjs",
+    "verify": "node tools/verify.mjs"
+  }
+}

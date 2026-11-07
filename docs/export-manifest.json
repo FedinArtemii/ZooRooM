@@ -1,0 +1,10 @@
+{
+  "source": "Local WordPress",
+  "base": "/ZooRooM/",
+  "pages": [
+    "/",
+    "/journal/cat-shedding/",
+    "/journal/yorkie-coat/",
+    "/journal/shedding-results/"
+  ]
+}
