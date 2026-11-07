@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T20:28:07.482Z",
+  "title": "Design System: ZooRooM",
+  "extensions": {
+    "colorMeta": {
+      "pine": {
+        "role": "primary",
+        "displayName": "Хвойный",
+        "tonalRamp": [
+          "oklch(15% 0.013 152)",
+          "oklch(26% 0.021 152)",
+          "oklch(37% 0.027 152)",
+          "oklch(49% 0.033 152)",
+          "oklch(61% 0.033 152)",
+          "oklch(73% 0.029 152)",
+          "oklch(84% 0.020 152)",
+          "oklch(95% 0.010 152)"
+        ]
+      },
+      "pine-deep": {
+        "role": "primary",
+        "displayName": "Глубокий хвойный",
+        "tonalRamp": [
+          "oklch(15% 0.010 155)",
+          "oklch(26% 0.017 155)",
+          "oklch(37% 0.022 155)",
+          "oklch(49% 0.026 155)",
+          "oklch(61% 0.026 155)",
+          "oklch(73% 0.023 155)",
+          "oklch(84% 0.016 155)",
+          "oklch(95% 0.008 155)"
+        ]
+      },
+      "action": {
+        "role": "primary",
+        "displayName": "Мшистый",
+        "tonalRamp": [
+          "oklch(15% 0.026 136)",
+          "oklch(26% 0.043 136)",
+          "oklch(37% 0.056 136)",
+          "oklch(49% 0.067 136)",
+          "oklch(61% 0.068 136)",
+          "oklch(73% 0.059 136)",
+          "oklch(84% 0.042 136)",
+          "oklch(95% 0.020 136)"
+        ]
+      },
+      "action-hover": {
+        "role": "primary",
+        "displayName": "Мшистый при наведении",
+        "tonalRamp": [
+          "oklch(15% 0.025 137)",
+          "oklch(26% 0.042 137)",
+          "oklch(37% 0.055 137)",
+          "oklch(49% 0.066 137)",
+          "oklch(61% 0.067 137)",
+          "oklch(73% 0.058 137)",
+          "oklch(84% 0.041 137)",
+          "oklch(95% 0.020 137)"
+        ]
+      },
+      "sage": {
+        "role": "secondary",
+        "displayName": "Шалфей",
+        "tonalRamp": [
+          "oklch(15% 0.021 127)",
+          "oklch(26% 0.035 127)",
+          "oklch(37% 0.045 127)",
+          "oklch(49% 0.055 127)",
+          "oklch(61% 0.056 127)",
+          "oklch(73% 0.048 127)",
+          "oklch(84% 0.034 127)",
+          "oklch(95% 0.017 127)"
+        ]
+      },
+      "sage-light": {
+        "role": "secondary",
+        "displayName": "Светлый шалфей",
+        "tonalRamp": [
+          "oklch(15% 0.010 121)",
+          "oklch(26% 0.016 121)",
+          "oklch(37% 0.021 121)",
+          "oklch(49% 0.025 121)",
+          "oklch(61% 0.025 121)",
+          "oklch(73% 0.022 121)",
+          "oklch(84% 0.015 121)",
+          "oklch(95% 0.008 121)"
+        ]
+      },
+      "brass": {
+        "role": "secondary",
+        "displayName": "Матовая латунь",
+        "tonalRamp": [
+          "oklch(15% 0.023 78)",
+          "oklch(26% 0.038 78)",
+          "oklch(37% 0.050 78)",
+          "oklch(49% 0.060 78)",
+          "oklch(61% 0.061 78)",
+          "oklch(73% 0.052 78)",
+          "oklch(84% 0.037 78)",
+          "oklch(95% 0.018 78)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Тёплая бумага",
+        "tonalRamp": [
+          "oklch(15% 0.005 87)",
+          "oklch(26% 0.009 87)",
+          "oklch(37% 0.012 87)",
+          "oklch(49% 0.014 87)",
+          "oklch(61% 0.014 87)",
+          "oklch(73% 0.012 87)",
+          "oklch(84% 0.009 87)",
+          "oklch(95% 0.004 87)"
+        ]
+      },
+      "ivory": {
+        "role": "neutral",
+        "displayName": "Слоновая кость",
+        "tonalRamp": [
+          "oklch(15% 0.007 86)",
+          "oklch(26% 0.011 86)",
+          "oklch(37% 0.014 86)",
+          "oklch(49% 0.017 86)",
+          "oklch(61% 0.018 86)",
+          "oklch(73% 0.015 86)",
+          "oklch(84% 0.011 86)",
+          "oklch(95% 0.005 86)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Приглушённые чернила",
+        "tonalRamp": [
+          "oklch(15% 0.011 147)",
+          "oklch(26% 0.019 147)",
+          "oklch(37% 0.024 147)",
+          "oklch(49% 0.029 147)",
+          "oklch(61% 0.030 147)",
+          "oklch(73% 0.026 147)",
+          "oklch(84% 0.018 147)",
+          "oklch(95% 0.009 147)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Серо-зелёная линия",
+        "tonalRamp": [
+          "oklch(15% 0.012 129)",
+          "oklch(26% 0.020 129)",
+          "oklch(37% 0.025 129)",
+          "oklch(49% 0.030 129)",
+          "oklch(61% 0.031 129)",
+          "oklch(73% 0.027 129)",
+          "oklch(84% 0.019 129)",
+          "oklch(95% 0.009 129)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Первый заголовок",
+        "purpose": "Крупный заголовок первого экрана."
+      },
+      "headline": {
+        "displayName": "Заголовок главы",
+        "purpose": "Основные разделы."
+      },
+      "title": {
+        "displayName": "Заголовок блока",
+        "purpose": "Услуги и заметки."
+      },
+      "body": {
+        "displayName": "Основной текст",
+        "purpose": "Пояснения и описания."
+      },
+      "button": {
+        "displayName": "Действие",
+        "purpose": "Подписи кнопок базового размера."
+      }
+    },
+    "motion": [
+      {
+        "name": "glide",
+        "value": "cubic-bezier(.22, 1, .36, 1)",
+        "purpose": "Раскрытие кадра, вход текста и смещение элементов управления."
+      },
+      {
+        "name": "hero-frame",
+        "value": "920ms",
+        "purpose": "Открытие маски изображения на первом экране."
+      },
+      {
+        "name": "hero-copy",
+        "value": "700ms 90ms",
+        "purpose": "Вход текста за 700 мс с задержкой 90 мс."
+      },
+      {
+        "name": "studio-frame",
+        "value": "entry 8% cover 43%",
+        "purpose": "Диапазон раскрытия кадра и смены масштаба по прокрутке."
+      },
+      {
+        "name": "hero-exit",
+        "value": "exit 0% exit 90%",
+        "purpose": "Портрет слегка приближается и темнеет при уходе первого экрана."
+      },
+      {
+        "name": "chapter-line",
+        "value": "entry 0% entry 35%",
+        "purpose": "Тонкая линия рисуется вдоль верхней границы раздела при его появлении."
+      },
+      {
+        "name": "button-color",
+        "value": "170ms ease",
+        "purpose": "Смена заливки и цвета кнопки."
+      },
+      {
+        "name": "button-shift",
+        "value": "140ms",
+        "purpose": "Смещение кнопки при наведении или нажатии."
+      },
+      {
+        "name": "faq-chevron",
+        "value": "190ms",
+        "purpose": "Поворот стрелки вопроса."
+      },
+      {
+        "name": "faq-answer",
+        "value": "200ms",
+        "purpose": "Появление раскрытого ответа."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "hero-crop",
+        "value": "880px"
+      },
+      {
+        "name": "single-column",
+        "value": "700px"
+      },
+      {
+        "name": "compact-controls",
+        "value": "360px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Основная кнопка",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Залитое мшистое действие на хвойном фоне.",
+      "html": "<div class=\"ds-button-primary ds-dark\"><button class=\"ds-action\" type=\"button\">Написать в ВК</button></div>",
+      "css": ".ds-dark { background: var(--pine, #18271c); color: var(--ivory, #fbf6eb); padding: 12px; } .ds-button-primary .ds-action { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 11px 22px; border: 1px solid var(--action, #5d7552); border-radius: 6px; background: var(--action, #5d7552); color: var(--ivory, #fbf6eb); font: 700 .96rem Manrope, system-ui, sans-serif; cursor: pointer; transition: background-color 170ms ease, color 170ms ease, transform 140ms var(--glide, cubic-bezier(.22, 1, .36, 1)); } .ds-button-primary .ds-action:hover { background: var(--action-hover, #4e6645); } .ds-button-primary .ds-action:focus-visible { outline: 2px solid var(--ivory, #fbf6eb); outline-offset: 4px; } @media (hover: hover) and (pointer: fine) { .ds-button-primary .ds-action:hover { transform: translateY(-2px); } } .ds-button-primary .ds-action:active { transform: translateY(1px) scale(.985); } @media (prefers-reduced-motion: reduce) { .ds-button-primary .ds-action { transition: none; } .ds-button-primary .ds-action:hover, .ds-button-primary .ds-action:active { transform: none; } }"
+    },
+    {
+      "name": "Контурная кнопка",
+      "kind": "button",
+      "refersTo": "button-outline-dark",
+      "description": "Вторичное действие на хвойном фоне.",
+      "html": "<div class=\"ds-button-outline-dark ds-dark\"><button class=\"ds-action\" type=\"button\">Позвонить</button></div>",
+      "css": ".ds-dark { background: var(--pine, #18271c); color: var(--ivory, #fbf6eb); padding: 12px; } .ds-button-outline-dark .ds-action { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 11px 22px; border: 1px solid var(--brass, #e1caa7); border-radius: 6px; background: transparent; color: var(--ivory, #fbf6eb); font: 700 .96rem Manrope, system-ui, sans-serif; cursor: pointer; transition: background-color 170ms ease, color 170ms ease, transform 140ms var(--glide, cubic-bezier(.22, 1, .36, 1)); } .ds-button-outline-dark .ds-action:hover { background: var(--pine-deep, #121e16); } .ds-button-outline-dark .ds-action:focus-visible { outline: 2px solid var(--ivory, #fbf6eb); outline-offset: 4px; } @media (hover: hover) and (pointer: fine) { .ds-button-outline-dark .ds-action:hover { transform: translateY(-2px); } } .ds-button-outline-dark .ds-action:active { transform: translateY(1px) scale(.985); } @media (prefers-reduced-motion: reduce) { .ds-button-outline-dark .ds-action { transition: none; } .ds-button-outline-dark .ds-action:hover, .ds-button-outline-dark .ds-action:active { transform: none; } }"
+    },
+    {
+      "name": "Кнопка на светлом фоне",
+      "kind": "button",
+      "refersTo": "button-solid-light",
+      "description": "Залитое хвойное действие на бумажном фоне.",
+      "html": "<div class=\"ds-button-solid-light ds-paper\"><button class=\"ds-action\" type=\"button\">Записаться</button></div>",
+      "css": ".ds-paper { background: var(--paper, #f5f1e8); color: var(--pine, #18271c); padding: 12px; } .ds-button-solid-light .ds-action { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 11px 22px; border: 1px solid var(--pine, #18271c); border-radius: 6px; background: var(--pine, #18271c); color: var(--ivory, #fbf6eb); font: 700 .96rem Manrope, system-ui, sans-serif; cursor: pointer; transition: background-color 170ms ease, color 170ms ease, transform 140ms var(--glide, cubic-bezier(.22, 1, .36, 1)); } .ds-button-solid-light .ds-action:hover { background: #354c39; } .ds-button-solid-light .ds-action:focus-visible { outline: 2px solid var(--pine, #18271c); outline-offset: 4px; } @media (hover: hover) and (pointer: fine) { .ds-button-solid-light .ds-action:hover { transform: translateY(-2px); } } .ds-button-solid-light .ds-action:active { transform: translateY(1px) scale(.985); } @media (prefers-reduced-motion: reduce) { .ds-button-solid-light .ds-action { transition: none; } .ds-button-solid-light .ds-action:hover, .ds-button-solid-light .ds-action:active { transform: none; } }"
+    },
+    {
+      "name": "Навигация",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Шрифтовой знак и текстовые ссылки на хвойной плоскости.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#home\">ZooRooM</a><nav class=\"ds-nav\" aria-label=\"Основное меню\"><a href=\"#services\">Услуги</a><a href=\"#studio\">О салоне</a><a href=\"#contacts\">Контакты</a></nav></header>",
+      "css": ".ds-header { display: flex; align-items: center; flex-wrap: wrap; gap: 4px clamp(16px, 5vw, 80px); padding: 8px clamp(14px, 4.1vw, 40px); background: var(--pine, #18271c); color: var(--ivory, #fbf6eb); border-bottom: 1px solid var(--brass, #e1caa7); } .ds-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 clamp(18px, 4vw, 64px); } .ds-header a { display: inline-flex; align-items: center; min-height: 44px; color: inherit; text-decoration: none; text-underline-offset: .25em; } .ds-brand { font: 400 clamp(1.68rem, 3.35vw, 3.4rem)/1 var(--display, Prata, Georgia, serif); letter-spacing: -.04em; } .ds-nav a { font: 500 clamp(.92rem, 1.58vw, 1.52rem)/1.65 Manrope, system-ui, sans-serif; } .ds-nav a:hover, .ds-nav a:focus-visible { text-decoration: underline; } .ds-header a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }"
+    },
+    {
+      "name": "Полоса выбора ухода",
+      "kind": "nav",
+      "refersTo": "care-strip",
+      "description": "Якорные ссылки с тонкими разделителями и стрелками вниз.",
+      "html": "<nav class=\"ds-care\" aria-label=\"Виды ухода\"><a href=\"#dog-care\">Уход за собаками</a><a href=\"#cat-care\">Уход за кошками</a></nav>",
+      "css": ".ds-care { display: flex; flex-wrap: wrap; gap: 6px 24px; padding-block: 7px; border-block: 1px solid var(--line, #aab3a1); background: var(--paper, #f5f1e8); color: var(--pine, #18271c); font: 700 1rem/1.65 Manrope, system-ui, sans-serif; } .ds-care a { display: inline-flex; align-items: center; gap: .85em; min-height: 44px; color: inherit; text-decoration: none; text-underline-offset: .25em; } .ds-care a::after { content: \"\"; width: .57em; height: .57em; margin: 0 .12em .24em; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); } .ds-care a:hover { text-decoration: underline; } .ds-care a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }"
+    },
+    {
+      "name": "Полоса услуги",
+      "kind": "card",
+      "refersTo": "service-row",
+      "description": "Пояснение и прямоугольное окно портрета. Превью показывает геометрию кадра.",
+      "html": "<article class=\"ds-service\"><div class=\"ds-service-copy\"><h3>Для собак</h3><p>Мытьё, сушка и стрижка по породе или по вашим пожеланиям.</p></div><figure class=\"ds-service-media\" aria-label=\"Место для портрета\">Кадр 6:5</figure></article>",
+      "css": ".ds-service { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); align-items: center; gap: clamp(24px, 8vw, 136px); background: var(--paper, #f5f1e8); color: var(--pine, #18271c); } .ds-service-copy { max-width: 37ch; padding-block: 22px; border-block: 1px solid var(--line, #aab3a1); } .ds-service h3 { margin: 0; font: 400 clamp(2.4rem, 4.7vw, 5rem)/1.18 var(--display, Prata, Georgia, serif); letter-spacing: -.035em; } .ds-service p { margin: 14px 0 0; color: var(--muted, #3c493d); font: 500 1rem/1.65 Manrope, system-ui, sans-serif; } .ds-service-media { display: grid; place-items: center; margin: 0; aspect-ratio: 6 / 5; background: var(--sage-light, #dce1d1); font: 500 .9rem/1.65 Manrope, system-ui, sans-serif; } @media (max-width: 700px) { .ds-service { grid-template-columns: 1fr; gap: 0; } .ds-service-media { grid-row: 1; } .ds-service-copy { max-width: none; } }"
+    },
+    {
+      "name": "Заметка журнала",
+      "kind": "card",
+      "refersTo": "story-card",
+      "description": "Редакционная карточка с датой, заголовком, пояснением и ссылкой.",
+      "html": "<article class=\"ds-story\"><time datetime=\"2026-08-29\">29.08.2026</time><h3><a href=\"#cat-shedding\">Когда кошка линяет</a></h3><p>Что входит в экспресс-линьку и о чём стоит рассказать мастеру до визита.</p><a class=\"ds-story-link\" href=\"#cat-shedding\" aria-label=\"Читать «Когда кошка линяет»\">Читать</a></article>",
+      "css": ".ds-story { display: flex; flex-direction: column; align-items: start; gap: 13px; padding-top: 20px; border-top: 1px solid var(--line, #aab3a1); background: var(--paper, #f5f1e8); color: var(--pine, #18271c); font: 500 1rem/1.65 Manrope, system-ui, sans-serif; } .ds-story time { font-size: .8rem; font-weight: 700; color: var(--muted, #3c493d); } .ds-story h3 { margin: 0; font: 400 clamp(1.28rem, 2vw, 2rem)/1.18 var(--display, Prata, Georgia, serif); letter-spacing: -.035em; } .ds-story p { margin: 0; color: var(--muted, #3c493d); } .ds-story a { color: inherit; text-underline-offset: .25em; } .ds-story h3 a { text-decoration: none; } .ds-story h3 a:hover { text-decoration: underline; } .ds-story-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; } .ds-story a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }"
+    },
+    {
+      "name": "Строка FAQ",
+      "kind": "custom",
+      "refersTo": "faq-row",
+      "description": "Нативное раскрытие ответа на светлой шалфейной плоскости.",
+      "html": "<details class=\"ds-faq\"><summary>Нужно ли готовить питомца?</summary><p>Заранее расскажите мастеру об особенностях поведения питомца.</p></details>",
+      "css": ".ds-faq { background: var(--sage-light, #dce1d1); color: var(--pine, #18271c); border-block: 1px solid var(--line, #aab3a1); font: 500 1rem/1.65 Manrope, system-ui, sans-serif; } .ds-faq summary { box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 59px; padding-block: 12px; cursor: pointer; font-weight: 750; list-style: none; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; } .ds-faq summary::after { content: \"\"; flex: 0 0 10px; width: 10px; height: 10px; margin: 0 4px 4px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); transition: transform 190ms var(--glide, cubic-bezier(.22, 1, .36, 1)); } .ds-faq[open] summary::after { transform: translateY(4px) rotate(225deg); } .ds-faq p { margin: 0; padding: 0 24px 17px 0; max-width: 60ch; color: var(--muted, #3c493d); } .ds-faq[open] > p { animation: ds-faq-arrives 200ms var(--glide, cubic-bezier(.22, 1, .36, 1)) both; } @keyframes ds-faq-arrives { from { opacity: .68; transform: translateY(11px); } to { opacity: 1; transform: translateY(0); } } @media (prefers-reduced-motion: reduce) { .ds-faq summary::after { transition: none; } .ds-faq[open] > p { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Груминг крупным планом",
+    "overview": "В ZooRooM заботу о питомце показывают через крупный план, естественный свет и фактуру льна. Кириллическая антиква задаёт масштаб, спокойный гротеск помогает быстро прочитать пояснения и найти действие.\n\nХвойные и бумажные плоскости делят страницу на главы. На светлом фоне тонкие линии собирают материал в редакционные полосы. Движение помогает открыть кадр и сохраняет понятный порядок чтения.",
+    "keyCharacteristics": [
+      "Хвойные и бумажные плоскости с шалфейным акцентом.",
+      "Крупная кириллическая антиква и короткие пояснения.",
+      "Прямоугольные фотографии, тонкие разделители и сдержанное движение."
+    ],
+    "rules": [
+      {
+        "name": "Цвет действия",
+        "body": "На хвойной плоскости сочетайте мшистую заливку с текстом цвета слоновой кости. Матовая латунь обводит соседнее действие.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Делайте** подпись кнопки читаемой и сохраняйте видимый контур фокуса (2 px с отступом 4 px).",
+      "**Делайте** большие кадры с естественным светом и оставляйте свободную тёмную область под светлый текст.",
+      "**Отмечайте** сгенерированные демонстрационные изображения видимой подписью."
+    ],
+    "donts": [
+      "**Избегайте** бордовых акцентов. Используйте хвойный, шалфей и латунь для разделения ролей."
+    ]
+  }
+}

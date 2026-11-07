@@ -73,7 +73,10 @@ async function write(file, contents) {
   await fs.writeFile(destination, contents);
 }
 
-await fs.cp('theme/zooroom/assets', path.join(root, 'assets'), {recursive: true});
+await fs.cp('theme/zooroom/assets', path.join(root, 'assets'), {
+  recursive: true,
+  filter: (source) => !source.endsWith('.webp.json'),
+});
 const pending = new Set(['/']);
 for (const route of pending) {
   visited.add(route);

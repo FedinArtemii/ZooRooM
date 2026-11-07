@@ -32,7 +32,7 @@ function zr_text($text, $class = '') {
 }
 
 function zr_image($asset, $alt, $class = '') {
-    $url = esc_url(get_theme_file_uri("assets/$asset.svg"));
+    $url = esc_url(get_theme_file_uri("assets/editorial/$asset.webp"));
     $alt = esc_attr($alt);
     $attributes = $class ? ['className' => $class] : [];
     $classes = trim("wp-block-image $class");
@@ -82,57 +82,66 @@ $map = 'https://yandex.ru/maps/org/zooroom/238105854151/';
 
 $hero = zr_group(
     zr_group(
-        zr_text('✦ &nbsp; Груминг-салон в Челябинске', 'eyebrow hero-kicker') .
-        zr_heading('Бережный груминг<br><em>для собак и кошек</em>', 1) .
-        zr_text('Стрижка, гигиена и уход за шерстью в ZooRooM. Подберём процедуры с учётом породы и особенностей вашего питомца.', 'hero-description') .
-        zr_buttons(zr_button('Записаться&nbsp; ↗', '#contacts'), zr_button('Смотреть услуги', '#services', 'button-outline')) .
-        zr_text('Челябинск, ул. Труда, 158', 'hero-address'),
+        zr_heading('Бережный груминг <br>для собак и кошек', 1) .
+        zr_buttons(zr_button('Написать в ВК', $message), zr_button('Позвонить', $phone, 'button-outline')) .
+        zr_text('Челябинск · ул. Труда, 158', 'hero-address'),
         'hero-copy'
     ) .
-    zr_group(zr_image('hero', 'Иллюстрация собаки и кошки', 'hero-image'), 'hero-art'),
+    zr_group(zr_image('poodle', 'Портрет светлого пуделя', 'hero-image'), 'hero-art') .
+    zr_text('<a href="#services">Выбрать уход</a>', 'hero-discover'),
     'hero', 'home', 'section'
 );
 
-$care_strip = zr_group(
-    zr_text('Стрижка и гигиена') . zr_text('Экспресс-линька') . zr_text('Уход за собаками и кошками'),
-    'care-strip'
-);
-
-$services = [
-    ['01', 'Груминг собак', 'Мытьё, сушка, стрижка по породе или пожеланиям владельца. В комплекс входит гигиенический уход.'],
-    ['02', 'Груминг кошек', 'Стрижка, вычёсывание шерсти и уход за когтями, ушами и глазами. Подберём подходящий комплекс.'],
-    ['03', 'Экспресс-линька', 'Вычесываем выпадающий подшёрсток у собак и кошек. Объём работы зависит от типа и состояния шерсти.'],
-    ['04', 'Чистка зубов', 'Ультразвуковая чистка для собак без наркоза. Подходит ли процедура питомцу, уточните при записи.'],
-];
-$service_cards = '';
-foreach ($services as [$number, $name, $description]) {
-    $service_cards .= zr_group(
-        zr_text($number, 'service-number') . zr_heading($name, 3) . zr_text($description),
-        'service-card', '', 'article'
-    );
-}
 $services_section = zr_group(
     zr_group(
-        zr_group(zr_text('01 / Услуги', 'eyebrow') . zr_heading('Уход от носа до хвоста')) .
-        zr_text('Расскажите нам о питомце. Подскажем, какой комплекс выбрать, сколько он займёт и сколько будет стоить.')
-        , 'section-heading'
-    ) . zr_group($service_cards, 'service-grid'),
+        zr_heading('Уход для вашего питомца') .
+        zr_text('Назовите породу и нужные процедуры при записи. Подскажем, сколько займёт уход и сколько он будет стоить.'),
+        'section-heading'
+    ) .
+    zr_group(
+        zr_text('<a href="#dog-care">Уход за собаками</a>') . zr_text('<a href="#cat-care">Уход за кошками</a>'),
+        'care-strip'
+    ) .
+    zr_group(
+        zr_group(
+            zr_heading('Для собак', 3) .
+            zr_text('Мытьё, сушка и стрижка по породе или по вашим пожеланиям. В комплекс входит гигиенический уход.'),
+            'service-copy', 'dog-care'
+        ) .
+        zr_image('dog', 'Золотистый спаниель на льняной скамье', 'service-photo'),
+        'service-card', '', 'article'
+    ) .
+    zr_group(
+        zr_group(
+            zr_heading('Для кошек', 3) .
+            zr_text('Стрижка или вычёсывание шерсти, уход за когтями, ушами и глазами. Подберём подходящий комплекс.'),
+            'service-copy', 'cat-care'
+        ) .
+        zr_image('cat', 'Серая кошка на льняной ткани', 'service-photo'),
+        'service-card service-card--cat', '', 'article'
+    ) .
+    zr_group(
+        zr_group(
+            zr_heading('Экспресс-линька', 3) .
+            zr_text('Для собак и кошек. Вычёсываем выпадающий подшёрсток с учётом типа и состояния шерсти.'),
+            'service-extra'
+        ) .
+        zr_group(
+            zr_heading('Чистка зубов', 3) .
+            zr_text('Ультразвуковая чистка для собак без наркоза. Подходит ли процедура питомцу, уточните при записи.'),
+            'service-extra'
+        ),
+        'service-extras'
+    ),
     'section services', 'services', 'section'
 );
 
 $studio = zr_group(
     zr_group(
-        zr_text('02 / О салоне', 'eyebrow') .
-        zr_heading('У каждого хвостика<br>свой характер') .
+        zr_heading('У каждого питомца свой характер') .
         zr_text('В ZooRooM стрижём собак и кошек, помогаем с сезонной линькой и подбираем одежду для собак. Перед визитом расскажите мастеру о привычках питомца и о том, как он переносит уход.'),
-        'studio-copy'
-    ) .
-    zr_group(
-        zr_group(zr_image('dog', 'Рисунок собаки с висячими ушами') . zr_text('Стрижка и укладка'), 'studio-card') .
-        zr_group(zr_image('cat', 'Рисунок кошки') . zr_text('Уход за кошками'), 'studio-card') .
-        zr_group(zr_image('brush', 'Рисунок щётки для вычёсывания') . zr_text('Уход за шерстью'), 'studio-card'),
-        'studio-grid'
-    ),
+        'section-heading studio-copy'
+    ) . zr_image('studio', 'Демонстрационная сцена ухода за шерстью собаки', 'studio-photo'),
     'section studio', 'studio', 'section'
 );
 
@@ -186,7 +195,7 @@ foreach ($stories as [$slug, $title, $date, $source, $excerpt, $paragraphs]) {
 }
 $journal = zr_group(
     zr_group(
-        zr_group(zr_text('03 / Журнал', 'eyebrow') . zr_heading('Заметки грумера')) .
+        zr_heading('Заметки грумера') .
         zr_text('<a href="' . $vk . '">Все публикации ВКонтакте&nbsp; ↗</a>', 'story-link'),
         'section-heading'
     ) . zr_group($story_cards, 'story-grid'),
@@ -194,7 +203,7 @@ $journal = zr_group(
 );
 
 $faq = zr_group(
-    zr_group(zr_text('04 / Вопросы', 'eyebrow') . zr_heading('Перед визитом'), 'faq-title') .
+    zr_heading('Перед визитом') .
     zr_group(
         zr_details('Нужно ли готовить питомца?', 'Специальная подготовка обычно не нужна. Заранее расскажите мастеру об особенностях поведения питомца и о том, какие процедуры он переносит с трудом.') .
         zr_details('Что входит в комплекс для собак?', 'Комплекс зависит от породы. Обычно он включает мытьё, сушку, стрижку или вычёсывание, уход за когтями, ушами и глазами. Состав уточним при записи.') .
@@ -208,15 +217,13 @@ $faq = zr_group(
 
 $contacts = zr_group(
     zr_group(
-        zr_text('05 / Контакты', 'eyebrow') .
-        zr_heading('Запишитесь<br>на груминг') .
+        zr_heading('Запишитесь на груминг') .
         zr_text('Расскажите, кого ждём в гости и какой уход нужен. Предложим удобное время.') .
-        zr_buttons(zr_button('Написать ВКонтакте&nbsp; ↗', $message), zr_button('Позвонить', $phone, 'button-outline')),
+        zr_buttons(zr_button('Написать в ВК', $message), zr_button('Позвонить', $phone, 'button-outline')),
         'contact-copy'
     ) .
     zr_group(
-        zr_text('Челябинск', 'eyebrow') .
-        zr_heading('ул. Труда, 158', 3) .
+        zr_heading('Челябинск, ул. Труда, 158', 3) .
         zr_text('Цокольный этаж · ежедневно, 10:00–20:00') .
         zr_text('<a href="' . $phone . '">+7 (995) 460-10-20</a>', 'contact-phone') .
         zr_text('<a href="' . $map . '">Открыть на Яндекс Картах&nbsp; ↗</a>', 'story-link'),
@@ -226,7 +233,7 @@ $contacts = zr_group(
 );
 
 $home = zr_save('page', 'home', 'ZooRooM — груминг-салон в Челябинске',
-    $hero . $care_strip . $services_section . $studio . $journal . $faq . $contacts
+    $hero . $services_section . $studio . $journal . $faq . $contacts
 );
 update_option('show_on_front', 'page');
 update_option('page_on_front', $home);

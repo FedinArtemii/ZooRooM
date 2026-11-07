@@ -29,13 +29,7 @@ function zooroom_link($fragment = '') {
 function zooroom_brand() {
     ?>
     <a class="brand" href="<?php echo zooroom_link(); ?>" aria-label="ZooRooM — главная">
-        <img src="<?php echo esc_url(get_theme_file_uri('assets/paw.svg')); ?>" alt="" width="38" height="38">
-        <span>Zoo<span>RooM</span></span>
+        ZooRooM
     </a>
     <?php
-remove_action('wp_head', 'print_emoji_detection_script', 7);
-remove_action('wp_enqueue_scripts', 'wp_enqueue_emoji_styles');
-remove_action('wp_print_styles', 'print_emoji_styles');
-remove_action('wp_footer', 'wp_print_speculation_rules');
-
 }
