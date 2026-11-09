@@ -4,7 +4,7 @@
         <p>Груминг-салон в Челябинске</p>
         <a href="<?php echo zooroom_link('#journal'); ?>">Журнал</a>
         <a href="https://vk.ru/zooroom_chelyabinsk">ВКонтакте</a>
-        <?php if (is_front_page()) : ?>
+        <?php if (is_front_page() || is_page('brand')) : ?>
             <p class="media-note">Изображения для демоверсии сгенерированы.</p>
         <?php endif; ?>
     </div>

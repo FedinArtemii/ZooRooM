@@ -68,5 +68,7 @@ if (!fs.existsSync(path.join(wp,'wp-content/languages/ru_RU.mo'))) cli('language
 if (!fs.existsSync(path.join(local, 'seeded'))) {
   cli('eval-file', path.join(root, 'tools/seed.php'));
   fs.writeFileSync(path.join(local, 'seeded'), '');
+} else {
+  cli('eval-file', path.join(root, 'tools/seed.php'), 'brand');
 }
 console.log('WordPress is ready. npm start → http://127.0.0.1:8096');

@@ -1,5 +1,9 @@
 <?php
-// Seed editable core blocks. Run on a fresh WordPress installation.
+// Seed editable core blocks without overwriting existing pages.
+$brand_only = in_array('brand', $args ?? [], true);
+if ($brand_only && get_page_by_path('brand') && get_page_by_path('versions')) {
+    return;
+}
 function zr_block($name, $html, $attributes = []) {
     $json = $attributes ? ' ' . serialize_block_attributes($attributes) : '';
     return "<!-- wp:$name$json -->\n$html\n<!-- /wp:$name -->\n\n";
@@ -31,8 +35,8 @@ function zr_text($text, $class = '') {
     return zr_block('paragraph', "<p$class_html>$text</p>", $attributes);
 }
 
-function zr_image($asset, $alt, $class = '') {
-    $url = esc_url(get_theme_file_uri("assets/editorial/$asset.webp"));
+function zr_image($asset, $alt, $class = '', $folder = 'editorial') {
+    $url = esc_url(get_theme_file_uri("assets/$folder/$asset.webp"));
     $alt = esc_attr($alt);
     $attributes = $class ? ['className' => $class] : [];
     $classes = trim("wp-block-image $class");
@@ -171,10 +175,13 @@ $stories = [
         ],
     ],
 ];
-global $wp_rewrite;
-$wp_rewrite->set_permalink_structure('/journal/%postname%/');
-update_option('timezone_string', 'Asia/Yekaterinburg');
+if (!$brand_only) {
+    global $wp_rewrite;
+    $wp_rewrite->set_permalink_structure('/journal/%postname%/');
+    update_option('timezone_string', 'Asia/Yekaterinburg');
+}
 $story_cards = '';
+$brand_story_cards = '';
 foreach ($stories as [$slug, $title, $date, $source, $excerpt, $paragraphs]) {
     $source_link = 'https://vk.ru/wall-50965296_' . $source;
     $mirror = 'https://zooroom-chelyabinsk.orgs.biz/news/' . $source;
@@ -185,11 +192,18 @@ foreach ($stories as [$slug, $title, $date, $source, $excerpt, $paragraphs]) {
         ['post_date' => "$date 12:00:00"]
     );
     $url = esc_url(get_permalink($post));
+    $date_label = get_the_date('d.m.Y', $post);
+    $story_heading = zr_heading('<a href="' . $url . '">' . esc_html($title) . '</a>', 3);
+    $story_summary = zr_text($excerpt);
+    $read_link = '<a href="' . $url . '" aria-label="Читать: ' . esc_attr($title) . '">';
     $story_cards .= zr_group(
-        zr_text(get_the_date('d.m.Y', $post), 'eyebrow') .
-        zr_heading('<a href="' . $url . '">' . esc_html($title) . '</a>', 3) .
-        zr_text($excerpt) .
-        zr_text('<a href="' . $url . '" aria-label="Читать: ' . esc_attr($title) . '">Читать&nbsp; ↗</a>', 'story-link'),
+        zr_text($date_label, 'eyebrow') . $story_heading . $story_summary .
+        zr_text($read_link . 'Читать&nbsp; ↗</a>', 'story-link'),
+        'story-card', '', 'article'
+    );
+    $brand_story_cards .= zr_group(
+        $story_heading . zr_text($date_label, 'story-date') . $story_summary .
+        zr_text($read_link . 'Читать</a>', 'story-link'),
         'story-card', '', 'article'
     );
 }
@@ -232,14 +246,18 @@ $contacts = zr_group(
     'section contacts', 'contacts', 'section'
 );
 
-$home = zr_save('page', 'home', 'ZooRooM — груминг-салон в Челябинске',
-    $hero . $services_section . $studio . $journal . $faq . $contacts
-);
-update_option('show_on_front', 'page');
-update_option('page_on_front', $home);
-update_option('blogname', 'ZooRooM');
-update_option('blogdescription', '');
-update_option('WPLANG', 'ru_RU');
-update_option('blog_public', 0);
-update_option('default_comment_status', 'closed');
-flush_rewrite_rules(false);
+if (!$brand_only) {
+    $home = zr_save('page', 'home', 'ZooRooM — груминг-салон в Челябинске',
+        $hero . $services_section . $studio . $journal . $faq . $contacts
+    );
+    update_option('show_on_front', 'page');
+    update_option('page_on_front', $home);
+    update_option('blogname', 'ZooRooM');
+    update_option('blogdescription', '');
+    update_option('WPLANG', 'ru_RU');
+    update_option('blog_public', 0);
+    update_option('default_comment_status', 'closed');
+    flush_rewrite_rules(false);
+}
+
+require __DIR__ . '/seed-brand.php';

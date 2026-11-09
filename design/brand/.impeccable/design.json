@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T06:46:56Z",
+  "title": "Design System — ZooRooM, фирменная версия",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Тёплая бумага",
+        "tonalRamp": [
+          "oklch(15% 0.008 87.5)",
+          "oklch(25% 0.015 87.5)",
+          "oklch(37% 0.024 87.5)",
+          "oklch(49% 0.032 87.5)",
+          "oklch(61% 0.035 87.5)",
+          "oklch(73% 0.027 87.5)",
+          "oklch(85% 0.017 87.5)",
+          "oklch(95% 0.006 87.5)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Глубокие чернила",
+        "tonalRamp": [
+          "oklch(15% 0.013 242.2)",
+          "oklch(25% 0.023 242.2)",
+          "oklch(37% 0.036 242.2)",
+          "oklch(49% 0.048 242.2)",
+          "oklch(61% 0.052 242.2)",
+          "oklch(73% 0.040 242.2)",
+          "oklch(85% 0.026 242.2)",
+          "oklch(95% 0.009 242.2)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Приглушённые чернила",
+        "tonalRamp": [
+          "oklch(15% 0.011 239.8)",
+          "oklch(25% 0.020 239.8)",
+          "oklch(37% 0.031 239.8)",
+          "oklch(49% 0.042 239.8)",
+          "oklch(61% 0.045 239.8)",
+          "oklch(73% 0.035 239.8)",
+          "oklch(85% 0.022 239.8)",
+          "oklch(95% 0.008 239.8)"
+        ]
+      },
+      "cyan": {
+        "role": "secondary",
+        "displayName": "Голубой круг",
+        "tonalRamp": [
+          "oklch(15% 0.033 232.8)",
+          "oklch(25% 0.060 232.8)",
+          "oklch(37% 0.093 232.8)",
+          "oklch(49% 0.126 232.8)",
+          "oklch(61% 0.137 232.8)",
+          "oklch(73% 0.106 232.8)",
+          "oklch(85% 0.067 232.8)",
+          "oklch(95% 0.025 232.8)"
+        ]
+      },
+      "sky": {
+        "role": "secondary",
+        "displayName": "Светлое небо",
+        "tonalRamp": [
+          "oklch(15% 0.008 218.6)",
+          "oklch(25% 0.015 218.6)",
+          "oklch(37% 0.024 218.6)",
+          "oklch(49% 0.032 218.6)",
+          "oklch(61% 0.035 218.6)",
+          "oklch(73% 0.027 218.6)",
+          "oklch(85% 0.017 218.6)",
+          "oklch(95% 0.006 218.6)"
+        ]
+      },
+      "pink": {
+        "role": "primary",
+        "displayName": "Малиновый",
+        "tonalRamp": [
+          "oklch(15% 0.046 356.8)",
+          "oklch(25% 0.084 356.8)",
+          "oklch(37% 0.129 356.8)",
+          "oklch(49% 0.175 356.8)",
+          "oklch(61% 0.190 356.8)",
+          "oklch(73% 0.146 356.8)",
+          "oklch(85% 0.093 356.8)",
+          "oklch(95% 0.034 356.8)"
+        ]
+      },
+      "pink-hover": {
+        "role": "primary",
+        "displayName": "Густой малиновый",
+        "tonalRamp": [
+          "oklch(15% 0.040 356.9)",
+          "oklch(25% 0.073 356.9)",
+          "oklch(37% 0.112 356.9)",
+          "oklch(49% 0.152 356.9)",
+          "oklch(61% 0.165 356.9)",
+          "oklch(73% 0.127 356.9)",
+          "oklch(85% 0.081 356.9)",
+          "oklch(95% 0.030 356.9)"
+        ]
+      },
+      "blush": {
+        "role": "tertiary",
+        "displayName": "Пудровая роза",
+        "tonalRamp": [
+          "oklch(15% 0.008 351.9)",
+          "oklch(25% 0.015 351.9)",
+          "oklch(37% 0.024 351.9)",
+          "oklch(49% 0.032 351.9)",
+          "oklch(61% 0.035 351.9)",
+          "oklch(73% 0.027 351.9)",
+          "oklch(85% 0.017 351.9)",
+          "oklch(95% 0.006 351.9)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Серо-голубой разделитель",
+        "tonalRamp": [
+          "oklch(15% 0.008 219.8)",
+          "oklch(25% 0.015 219.8)",
+          "oklch(37% 0.024 219.8)",
+          "oklch(49% 0.032 219.8)",
+          "oklch(61% 0.035 219.8)",
+          "oklch(73% 0.027 219.8)",
+          "oklch(85% 0.017 219.8)",
+          "oklch(95% 0.006 219.8)"
+        ]
+      },
+      "chrome-line": {
+        "role": "neutral",
+        "displayName": "Полупрозрачная чернильная линия",
+        "tonalRamp": [
+          "oklch(15% 0.013 242.2)",
+          "oklch(25% 0.023 242.2)",
+          "oklch(37% 0.036 242.2)",
+          "oklch(49% 0.048 242.2)",
+          "oklch(61% 0.052 242.2)",
+          "oklch(73% 0.040 242.2)",
+          "oklch(85% 0.026 242.2)",
+          "oklch(95% 0.009 242.2)"
+        ]
+      },
+      "faq-line": {
+        "role": "primary",
+        "displayName": "Полупрозрачная малиновая линия",
+        "tonalRamp": [
+          "oklch(15% 0.046 356.8)",
+          "oklch(25% 0.084 356.8)",
+          "oklch(37% 0.129 356.8)",
+          "oklch(49% 0.175 356.8)",
+          "oklch(61% 0.190 356.8)",
+          "oklch(73% 0.146 356.8)",
+          "oklch(85% 0.093 356.8)",
+          "oklch(95% 0.034 356.8)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Белый",
+        "tonalRamp": [
+          "oklch(15% 0 0.0)",
+          "oklch(25% 0 0.0)",
+          "oklch(37% 0 0.0)",
+          "oklch(49% 0 0.0)",
+          "oklch(61% 0 0.0)",
+          "oklch(73% 0 0.0)",
+          "oklch(85% 0 0.0)",
+          "oklch(95% 0 0.0)"
+        ]
+      },
+      "comparison-editorial": {
+        "role": "neutral",
+        "displayName": "Шалфей сравнения",
+        "tonalRamp": [
+          "oklch(15% 0.008 118.1)",
+          "oklch(25% 0.015 118.1)",
+          "oklch(37% 0.024 118.1)",
+          "oklch(49% 0.032 118.1)",
+          "oklch(61% 0.035 118.1)",
+          "oklch(73% 0.027 118.1)",
+          "oklch(85% 0.017 118.1)",
+          "oklch(95% 0.006 118.1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Заголовок первого экрана",
+        "purpose": "Главный заголовок фирменной страницы."
+      },
+      "headline": {
+        "displayName": "Заголовок раздела",
+        "purpose": "Разделы услуг, салона, журнала, FAQ и контактов."
+      },
+      "button": {
+        "displayName": "Действие",
+        "purpose": "Запись в ВК, телефон и переходы на странице сравнения."
+      }
+    },
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22, 1, .36, 1)",
+        "purpose": "Вход портрета и орбиты, смещение кнопки и поворот знака FAQ."
+      },
+      {
+        "name": "control-transition",
+        "value": ".25s",
+        "purpose": "Заливка, контур, текст и смещение кнопок, поворот знака FAQ."
+      },
+      {
+        "name": "orbit-arrive",
+        "value": "1.15s",
+        "purpose": "Вход орбиты от поворота -32deg и масштаба .9."
+      },
+      {
+        "name": "portrait-arrive",
+        "value": ".85s",
+        "purpose": "Вход портрета от смещения 22px и масштаба .95."
+      },
+      {
+        "name": "studio-open",
+        "value": "entry 3% entry 90%",
+        "purpose": "Раскрытие кадра салона при входе в область просмотра."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "section-stack",
+        "value": "820px"
+      },
+      {
+        "name": "mobile",
+        "value": "680px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Запись в ВК",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Основное действие на первом экране и в контактах.",
+      "html": "<a class=\"ds-button-primary\" href=\"https://vk.me/zooroom_chelyabinsk\">Написать в ВК</a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;min-height:50px;box-sizing:border-box;padding:11px 24px;border:1px solid var(--pink, #b10d65);border-radius:100px;background:var(--pink, #b10d65);color:#fff;font:800 .95rem/1.35 Manrope, sans-serif;text-align:center;text-decoration:none;transition:background-color .25s,border-color .25s,color .25s,transform .25s var(--ease, cubic-bezier(.22, 1, .36, 1))} .ds-button-primary:hover{background:var(--pink-hover, #8b094e);border-color:var(--pink-hover, #8b094e);color:#fff;transform:translateY(-2px)} .ds-button-primary:active{transform:scale(.98)} .ds-button-primary:focus-visible{outline:2px solid currentColor;outline-offset:4px;outline-color:var(--ink, #102e43)} @media(prefers-reduced-motion:reduce){.ds-button-primary,.ds-button-primary:hover,.ds-button-primary:active{transform:none;transition:none}}"
+    },
+    {
+      "name": "Контурная кнопка",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Второе действие рядом с записью.",
+      "html": "<a class=\"ds-button-outline\" href=\"tel:+79954601020\">Позвонить</a>",
+      "css": ".ds-button-outline{display:inline-flex;align-items:center;justify-content:center;min-height:50px;box-sizing:border-box;padding:11px 24px;border:1px solid var(--ink, #102e43);border-radius:100px;background:transparent;color:var(--ink, #102e43);font:800 .95rem/1.35 Manrope, sans-serif;text-align:center;text-decoration:none;transition:background-color .25s,border-color .25s,color .25s,transform .25s var(--ease, cubic-bezier(.22, 1, .36, 1))} .ds-button-outline:hover{background:var(--ink, #102e43);border-color:var(--ink, #102e43);color:#fff;transform:translateY(-2px)} .ds-button-outline:active{transform:scale(.98)} .ds-button-outline:focus-visible{outline:2px solid currentColor;outline-offset:4px;outline-color:var(--ink, #102e43)} @media(prefers-reduced-motion:reduce){.ds-button-outline,.ds-button-outline:hover,.ds-button-outline:active{transform:none;transition:none}}"
+    },
+    {
+      "name": "Навигация",
+      "kind": "nav",
+      "description": "Ссылки шапки на широком экране и акцент сравнения.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Основное меню\"><a href=\"#services\">Услуги</a><a href=\"#studio\">О салоне</a><a href=\"#contacts\">Контакты</a><a class=\"ds-nav-compare\" href=\"/versions/\">Сравнить дизайны</a></nav>",
+      "css": ".ds-nav{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(18px,3vw,48px);background:var(--paper, #fffcf5);color:var(--ink, #102e43)} .ds-nav a{display:inline-flex;align-items:center;min-height:44px;color:inherit;font:800 .94rem Manrope, sans-serif;text-decoration:none;text-underline-offset:.24em} .ds-nav a:hover,.ds-nav a:focus-visible{text-decoration:underline} .ds-nav a:focus-visible{outline:2px solid currentColor;outline-offset:4px} .ds-nav .ds-nav-compare{color:var(--pink, #b10d65);border-bottom:1px solid currentColor} .ds-nav .ds-nav-compare:hover{text-decoration:none;border-bottom-width:2px}"
+    },
+    {
+      "name": "Карточка услуги",
+      "kind": "card",
+      "refersTo": "service-card",
+      "description": "Текстовая часть карточки для собак на тёплой бумаге.",
+      "html": "<article class=\"ds-service\"><div class=\"ds-service-copy\"><h3>Для собак</h3><p>Мытьё, сушка и стрижка по породе или по вашим пожеланиям.</p></div></article>",
+      "css": ".ds-service{overflow:hidden;border-radius:16px;background:var(--paper, #fffcf5);color:var(--ink, #102e43);font:500 1rem/1.6 Manrope, sans-serif} .ds-service-copy{padding:clamp(22px,3vw,42px)} .ds-service h3{margin:0;font-size:clamp(1.5rem,2.7vw,2.55rem);font-weight:800;line-height:1.06;letter-spacing:-.04em} .ds-service p{max-width:48ch;margin:12px 0 0;color:var(--muted, #385366)}"
+    },
+    {
+      "name": "Вопрос FAQ",
+      "kind": "custom",
+      "refersTo": "faq",
+      "description": "Нативное раскрытие ответа на розовом фоне.",
+      "html": "<div class=\"ds-faq\"><details class=\"ds-details\"><summary>Нужно ли готовить питомца?</summary><p>Специальная подготовка обычно не нужна.</p></details></div>",
+      "css": ".ds-faq{background:var(--blush, #fdebf2);color:var(--ink, #102e43);font:500 1rem/1.6 Manrope, sans-serif} .ds-details{border-block:1px solid #b10d6545} .ds-details summary{position:relative;display:block;padding:15px 34px 15px 0;font-size:clamp(1rem,1.5vw,1.2rem);font-weight:800;cursor:pointer} .ds-details summary::-webkit-details-marker{display:none} .ds-details summary::before,.ds-details summary::after{content:\"\";position:absolute;top:50%;right:4px;width:15px;height:2px;background:var(--pink, #b10d65);transition:transform .25s var(--ease, cubic-bezier(.22, 1, .36, 1))} .ds-details summary::after{transform:rotate(90deg)} .ds-details[open] summary::after{transform:rotate(0)} .ds-details summary:hover{color:var(--pink, #b10d65)} .ds-details summary:focus-visible{outline:2px solid currentColor;outline-offset:4px} .ds-details p{max-width:64ch;margin:0;padding-bottom:18px;color:var(--muted, #385366)} @media(prefers-reduced-motion:reduce){.ds-details summary::before,.ds-details summary::after{transition:none}}"
+    },
+    {
+      "name": "Голубой круг и орбита",
+      "kind": "custom",
+      "description": "Графические слои композиции первого экрана.",
+      "html": "<div class=\"ds-art\" aria-hidden=\"true\"></div>",
+      "css": ".ds-art{position:relative;isolation:isolate;width:min(100%,200px);aspect-ratio:1} .ds-art::before,.ds-art::after{content:\"\";position:absolute;border-radius:50%;pointer-events:none} .ds-art::before{inset:7%;background:var(--cyan,#00a1da)} .ds-art::after{inset:3.6%;z-index:-1;background:repeating-conic-gradient(from 8deg,var(--pink, #b10d65) 0deg 7deg,transparent 7deg 12deg);mask-image:radial-gradient(farthest-side,transparent calc(100% - 4px),#000 calc(100% - 3px),#000 calc(100% - 1px),transparent)} @media(prefers-reduced-motion:no-preference){.ds-art::after{animation:ds-orbit-arrive 1.15s var(--ease, cubic-bezier(.22, 1, .36, 1)) both} @keyframes ds-orbit-arrive{from{transform:rotate(-32deg) scale(.9)}}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Круг из логотипа",
+    "overview": "Цветной знак ZooRooM задаёт палитру и геометрию. На первом экране крупный заголовок и запись соседствуют с демонстрационным портретом белой мальтийской болонки. Голубой круг и малиновый пунктир обрамляют портрет. Дальше цвет помогает различать услуги, салон и ответы на вопросы.\n\nСистема относится к `/brand/` и `/versions/`. Источник стилей — [`theme/zooroom/brand.css`](../../theme/zooroom/brand.css).",
+    "keyCharacteristics": [
+      "Круглый знак пользователя и белый портрет на голубом круге.",
+      "Тёплая бумага, чернильный текст и отдельные цветовые поля.",
+      "Малиновая запись в ВК и контурная кнопка звонка."
+    ],
+    "dos": [
+      "Сохраняйте предоставленный цветной знак и видимую подпись о демонстрационных изображениях.",
+      "Оставляйте запись в ВК первым действием, а телефон — рядом.",
+      "Проверяйте клавиатурный фокус, раскрытие FAQ и настройку уменьшенного движения в предпросмотре."
+    ]
+  }
+}

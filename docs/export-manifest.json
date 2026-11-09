@@ -3,6 +3,8 @@
   "base": "/ZooRooM/",
   "pages": [
     "/",
+    "/brand/",
+    "/versions/",
     "/journal/cat-shedding/",
     "/journal/yorkie-coat/",
     "/journal/shedding-results/"

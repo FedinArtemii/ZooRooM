@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(zooroom_brand_demo() ? 'brand-demo' : ''); ?>>
 <?php wp_body_open(); ?>
 <a class="skip-link" href="#main">К содержанию</a>
 <header class="site-header">
@@ -16,6 +16,9 @@
             <a href="<?php echo zooroom_link('#services'); ?>">Услуги</a>
             <a href="<?php echo zooroom_link('#studio'); ?>">О салоне</a>
             <a href="<?php echo zooroom_link('#contacts'); ?>">Контакты</a>
+<?php if (is_page('brand')) : ?>
+                <a class="compare-link" href="<?php echo esc_url(home_url('/versions/')); ?>">Сравнить дизайны</a>
+<?php endif; ?>
         </nav>
     </div>
 </header>

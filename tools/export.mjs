@@ -77,7 +77,7 @@ await fs.cp('theme/zooroom/assets', path.join(root, 'assets'), {
   recursive: true,
   filter: (source) => !source.endsWith('.webp.json'),
 });
-const pending = new Set(['/']);
+const pending = new Set(['/', '/brand/', '/versions/']);
 for (const route of pending) {
   visited.add(route);
   const response = await request(route);

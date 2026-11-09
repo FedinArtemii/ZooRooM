@@ -5,7 +5,7 @@ import {execFileSync} from 'node:child_process';
 
 const root = path.resolve('docs');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'export-manifest.json'), 'utf8'));
-const expected = ['/', '/journal/cat-shedding/', '/journal/shedding-results/', '/journal/yorkie-coat/'];
+const expected = ['/', '/brand/', '/versions/', '/journal/cat-shedding/', '/journal/shedding-results/', '/journal/yorkie-coat/'];
 for (const route of expected) assert(manifest.pages.includes(route), 'Missing WordPress page: ' + route);
 
 let links = 0;
@@ -17,6 +17,11 @@ for (const route of [...manifest.pages, '/404.html']) {
   assert.equal((html.match(/<h1\b/g) || []).length, 1, 'Expected one H1: ' + route);
   assert(!/127\.0\.0\.1|localhost|wp-config\.php|Fatal error|Parse error/.test(html), 'Local path or PHP error in ' + route);
   assert.match(html, /noindex/, 'Demo indexing metadata');
+  const brandPage = route === '/brand/' || route === '/versions/';
+  assert(html.includes(manifest.base + (brandPage ? 'brand.css?' : 'style.css?')), 'Unexpected design on ' + route);
+  if (route === '/versions/') {
+    for (const target of ['', 'brand/']) assert(html.includes('href="' + manifest.base + target + '"'), 'Missing design link to ' + target);
+  }
   for (const match of html.matchAll(/\s(?:href|src|srcset)=(["'])([^"']+)\1/g)) {
     const values = match[0].includes('srcset=') ? match[2].split(/,\s+/).map(value => value.split(/\s+/)[0]) : [match[2]];
     for (const value of values) {
@@ -35,8 +40,10 @@ for (const route of [...manifest.pages, '/404.html']) {
   for (const match of html.matchAll(/<img\b[^>]*>/g)) assert(/\balt=/.test(match[0]), 'Image without alt in ' + route);
 }
 
-const css = fs.readFileSync(path.join(root, 'style.css'), 'utf8');
-for (const match of css.matchAll(/url\("([^"]+)"\)/g)) assert(fs.existsSync(path.join(root, match[1])), 'Missing CSS asset ' + match[1]);
+for (const stylesheet of ['style.css', 'brand.css']) {
+  const css = fs.readFileSync(path.join(root, stylesheet), 'utf8');
+  for (const match of css.matchAll(/url\("([^"]+)"\)/g)) assert(fs.existsSync(path.join(root, match[1])), 'Missing CSS asset ' + match[1]);
+}
 for (const dir of ['theme/zooroom', 'tools']) {
   for (const file of fs.readdirSync(dir, {recursive: true}).filter(name => name.endsWith('.php'))) {
     execFileSync(process.env.PHP_BIN || 'php', ['-l', path.join(dir, file)]);
